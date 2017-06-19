@@ -3,7 +3,7 @@ from flask import flask
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-@app.route("/")
+@app.route("/rotate",methods=['POST'])
 
 form = """
 <!DOCTYPE html>
@@ -27,7 +27,13 @@ form = """
         </style>
     </head>
     <body>
-      <!-- create your form here -->
+        <form action="/rotate" method="post">
+              <label for="rotate-factor">
+                  Rotate by:
+                  <input type="text" id="rotate-factor" name="rotate-factor"/>
+              </label>
+              <input type="submit" value="Submit Query"/>
+          </form>
     </body>
 </html>
 """
