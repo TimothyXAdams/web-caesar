@@ -1,9 +1,9 @@
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-@app.route("/rotate",methods=['POST'])
+
 
 form = """
 <!DOCTYPE html>
@@ -37,7 +37,9 @@ form = """
     </body>
 </html>
 """
-def index():
 
+@app.route("/rotate",methods=['GET'])
+def index():
+    return form
 
 app.run()
