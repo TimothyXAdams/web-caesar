@@ -35,7 +35,7 @@ form = """
               </label>
               <textarea>
                 {0}
-                #<input type="textarea" id="textarea" name="text"/>
+
               </textarea>
               <input type="submit" value="Submit Query"/>
           </form>
@@ -64,3 +64,5 @@ def encrypt(rot, text):
     #return "<h1> + newtext + </h1>"
 
 app.run()
+
+#<input type="textarea" id="textarea" name="text"/>
