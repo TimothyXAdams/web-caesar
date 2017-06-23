@@ -45,7 +45,7 @@ def index():
     return form.format('')
 
 
-@app.route("/rotate", methods=['POST'])
+#@app.route("/rotate", methods=['POST'])
 #rotate_string(text, rot):
 
 
