@@ -49,7 +49,7 @@ def index():
 #rotate_string(text, rot):
 
 
-@app.route("/", methods=['POST'])
+@app.route("/rotate", methods=['POST'])
 def encrypt():
     #def encrypt(rot, text):
 
