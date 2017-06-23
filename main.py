@@ -50,7 +50,8 @@ def index():
 
 
 @app.route("/", methods=['POST'])
-def encrypt(rot, text):
+def encrypt():
+    #def encrypt(rot, text):
     rot = int(rot)
     text = text
 
